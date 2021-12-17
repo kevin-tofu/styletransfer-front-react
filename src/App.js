@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 // import ImageHandler from './components/imagehandler/ImageHandler'
-import ImageHandlerSlider from './components/imagehandler/ImageHandlerSlider'
+import ImageHandler2SelectiveSlider from './components/imagehandler/ImageHandlerSlider_selective'
 
 import { URL_HOST, API_POST, TITLE, DIALOG_TITLE, DIALOG_TEXTCONTENT } from './config'
 
@@ -15,11 +15,11 @@ function App() {
 
   return (
     <div className="App">
-      <ImageHandlerSlider url_host={URL_HOST} api_post={API_POST} 
-                          title={TITLE} 
-                          dialog_title = {DIALOG_TITLE} dialog_textcontent={DIALOG_TEXTCONTENT}
-                          initAlpha = {0.2}
-                          sSelective = {stateSelective}
+      <ImageHandler2SelectiveSlider url_host={URL_HOST} api_post={API_POST} 
+                                    title={TITLE} 
+                                    dialog_title = {DIALOG_TITLE} dialog_textcontent={DIALOG_TEXTCONTENT}
+                                    initAlpha = {0.2}
+                                    sSelective = {stateSelective}
       />
     </div>
   );
